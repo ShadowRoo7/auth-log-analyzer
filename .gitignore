@@ -1,7 +1,13 @@
-# Generated mock logs (recreate with ./gen_mock_logs.sh -o mock-logs)
+# Generated mock logs and fixtures.
+# These are reproducible output, not source: recreate with
+#   ./gen_mock_logs.sh -o <dir> --seed <n> --end "<fixed timestamp>"
+#
+# NOTE: a fixture is only worth committing if it is generated with a FIXED
+# --seed AND a FIXED --end. With the default --end now, the log content
+# changes on every run and cannot serve as a regression oracle.
 mock-logs/
-*.log
-!*.md
+test/
+tests/tmp/
 
 # Editor / OS noise
 *.swp
