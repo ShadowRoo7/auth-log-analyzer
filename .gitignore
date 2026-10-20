@@ -1,0 +1,11 @@
+# Generated mock logs (recreate with ./gen_mock_logs.sh -o mock-logs)
+mock-logs/
+*.log
+!*.md
+
+# Editor / OS noise
+*.swp
+*~
+.DS_Store
+.idea/
+.vscode/
